@@ -1,0 +1,290 @@
+.about_heading{
+    height: 250px;
+    background-color: rgba(19, 40, 125, 0.85);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.line{
+    width: 100px;
+    margin: 20px;
+    height: 2px;
+    background: white;
+}
+
+.about_heading h1{
+    font-size: 60px;
+    font-weight: 800;
+}
+
+.our_expertise{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 200px;
+    height: 400px;
+    background-color: rgba(146, 174, 255, 0.251);
+}
+
+.our_expertise .advantage{
+    cursor: pointer;
+    width: 400px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    margin: 10px;
+    height: 350px;
+    padding: 20px;
+    transition: 300ms;
+}
+
+.our_expertise .advantage:hover{
+    background: rgba(19, 40, 125, 0.85);
+    color: white;
+}
+
+.our_expertise .advantage:hover .advantage_img i{
+    background: white;
+    color: black;
+}
+
+.our_expertise .advantage:hover .advantage_info h1{
+    color: white;
+}
+
+.our_expertise .advantage:hover .advantage_info p{
+    color: rgba(255, 255, 255, 0.651);
+}
+
+.advantage .advantage_img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+}
+
+.advantage .advantage_img i{
+    padding: 30px;
+    border-radius: 10px;
+    background: rgba(19, 40, 125, 0.85);
+    color: white;
+    font-size: 30px;
+}
+
+.advantage_info h1{
+    font-size: 25px;
+    text-align: center;
+    margin: 10px;
+    color: rgba(19, 40, 125, 0.85);
+}
+
+.advantage_info p{
+    text-align: center;
+    font-size: 17px;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.652);
+}
+
+.about_visatact{
+    padding: 20px 200px;
+}
+
+.about_visatact .para{
+    font-size: 20px;
+    font-weight: 500;
+    color: rgb(4, 133, 25);
+    margin: 20px 0;
+}
+.about_visatact_heading{
+    font-size: 40px;
+    font-weight: 900;
+    color: rgba(19, 40, 125, 0.85);
+    margin-bottom: 30px;
+}
+.full_detils{
+    display: flex;
+}
+
+.full_detils .first_details{
+    width: 45%;
+}
+
+.full_detils .first_details p{
+    color: rgba(0, 0, 0, 0.652);
+    margin-bottom: 10px;
+    line-height: 22px;
+    font-weight: 500;
+}
+
+.second_details{
+    padding: 0 20px;
+}
+
+.second_datials_info{
+    margin-bottom: 20px;
+}
+
+.second_datials_info i{
+    background-color: rgba(19, 40, 125, 0.85);
+    padding: 10px;
+    border-radius: 50%;
+    color: white;
+    margin-right: 10px;
+}
+
+.cleaning_info{
+    padding: 100px 200px;
+}
+
+.cleaning_info h1{
+    color: rgba(19, 40, 125, 0.85);
+    margin-bottom: 20px;
+    font-size: 50px;
+    font-weight: 900;
+}
+
+.cleaning_info p{
+    color: rgb(4, 133, 25);
+    font-size: 20px;
+    margin: 20px 0;
+}
+
+.cleaning_info button{
+    border: none;
+    outline: none;
+    font-size: 18px;
+    font-weight: 500;
+    background: rgba(19, 40, 125, 0.85);
+    border-radius: 35px;
+    padding: 25px 50px;
+    cursor: pointer;
+}
+
+.cleaning_info button a{
+    text-decoration: none;
+    color: white;
+}
+
+/* responsive */
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+    .about_heading{
+        height: 170px;
+    }
+    .about_heading h1 {
+        font-size: 40px;
+    }
+    .line {
+        margin: 10px;
+    }
+    .our_expertise {
+        padding: 20px;
+    }
+    .our_expertise .advantage{
+        margin: 10px;
+    }
+    .advantage .advantage_img {
+        height: 100px;
+    }
+    .advantage .advantage_img i {
+        padding: 18px;
+        font-size: 22px;
+    }
+    .advantage_info h1 {
+        font-size: 22px;
+    }
+    .about_visatact {
+        padding: 20px 70px;
+    }
+    .full_detils{
+        display: inline-block;
+    }
+    .full_detils .first_details{
+        width: 100%;
+    }
+    .cleaning_info {
+        padding: 90px;
+    }
+    .cleaning_info h1 {
+        font-size: 44px;
+    }
+}
+
+@media screen and (max-width: 767px) and (min-width: 425px){
+    .our_expertise {
+        display: inline-block;
+        padding: 20px;
+        height: auto;
+    }
+    .our_expertise .advantage{
+        width: auto;
+    }
+    .about_visatact {
+        padding: 20px;
+    }
+    .about_visatact_heading {
+        font-size: 35px;
+    }
+    .full_detils {
+        display: inline-block;
+    }
+    .full_detils .first_details {
+        width: 100%;
+    }
+    .second_details {
+        padding: 10px;
+    }
+    .cleaning_info {
+        padding: 70px;
+    }
+    .cleaning_info h1 {
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width: 424px) and (min-width: 310px){
+    .bg_color_home {
+        height: 56%;
+    }
+    .about_heading h1{
+        font-size: 40px;
+    }
+    .our_expertise {
+        display: inline-block;
+        padding: 20px;
+        height: auto;
+    }
+    .our_expertise .advantage {
+        width: auto;
+        padding: 15px;
+    }
+    .about_visatact {
+        padding: 20px;
+    }
+    .full_detils {
+        display: inline-block;
+    }
+    .about_visatact_heading {
+        font-size: 30px;
+    }
+    .full_detils .first_details {
+        width: 100%;
+    }
+    .second_details{
+        padding: 10px;
+    }
+    .cleaning_info{
+        padding: 20px;
+    }
+    .cleaning_info h1 {
+        font-size: 25px;
+    }
+    .cleaning_info p {
+        font-size: 18px;
+     }
+     .cleaning_info button {
+        font-size: 15px;
+        padding: 21px 35px;
+     }
+}

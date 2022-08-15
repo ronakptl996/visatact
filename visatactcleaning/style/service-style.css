@@ -1,0 +1,157 @@
+.choose_services{
+    margin-top: 0;
+}
+
+.service_img h1{
+    padding: 20px 160px;
+    text-align: center;
+}
+
+.skills_div{
+    display: flex;
+    width: 100%;
+    padding: 20px 0;
+}
+
+.skills_div .skills_volume{
+    width: 50%;
+    padding: 100px 30px 20px 10px;
+}
+
+.skills_div .skills_volume .skills_para{
+    font-size: 18px;
+    font-weight: 500;
+    color: rgb(4, 133, 25);
+    padding: 20px 0;
+}
+
+.skills_div .skills_volume h1{
+    font-size: 50px;
+    padding: 0 40px 0 0;
+    font-weight: 800;
+    color: rgba(19, 40, 125, 0.85);
+    margin-bottom: 40px;
+}
+
+.skills_volume .mark_skills{
+    /* background: yellow; */
+    margin-bottom: 20px;
+}
+.mark_skills .mark_percentage{
+    display: flex;
+    justify-content: space-between;
+}
+
+.mark_skills .mark_percentage p{
+    margin: 10px 0;
+}
+
+.mark_skills .percentage, .percentage2, .percentage3{
+    height: 30px;
+    width: 100%;
+    background-color: antiquewhite;
+    position: relative;
+}
+
+.mark_skills .percentage::before{
+    content: '';
+    display: block;
+    position: absolute;
+    width: 80%;
+    height: 100%;
+    background-color: orange;
+}
+
+.mark_skills .percentage2::before{
+    content: '';
+    display: block;
+    position: absolute;
+    width: 70%;
+    height: 100%;
+    background-color: green;
+}
+
+.mark_skills .percentage3::before{
+    content: '';
+    display: block;
+    position: absolute;
+    width: 90%;
+    height: 100%;
+    background-color: blue;
+}
+
+.skills_div .skills_img{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.skills_div .skills_img img{
+    height: 700px;
+}
+
+.cleaning_info{
+    background:rgba(146, 174, 255, 0.251);
+}
+
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+    .service_img h1 {
+        padding: 20px 34px;
+    }
+    .skills_div{
+        display: inline-block;
+    }
+    .skills_div .skills_volume{
+        width: 100%;
+    }
+    .skills_div .skills_img{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 767px) and (min-width: 425px){
+    .service_img h1{
+        padding: 20px;
+    }
+    .skills_div{
+        display: inline-block;
+    }
+    .skills_div .skills_volume{
+        width: 100%;
+    }
+    .skills_div .skills_img{
+        width: 90%;
+    }
+    .skills_div .skills_volume h1 {
+        font-size: 40px;
+        padding: 0 6px 0 0px;
+    }
+}
+
+
+@media screen and (max-width: 424px) and (min-width: 310px){
+    .service_img h1{
+        padding: 20px;
+    }
+    .skills_div{
+        display: inline-block;
+    }
+    .skills_div .skills_volume{
+        width: 100%;
+    }
+    .skills_div .skills_img{
+        width: 60%;
+    }
+    .skills_div .skills_volume h1{
+        font-size: 30px;
+        padding: 0;
+    }
+    .skills_div .skills_img{
+        width: 100%;
+    }
+    .skills_div .skills_img img{
+        width: 100%;
+        object-fit: cover;
+    }
+}
